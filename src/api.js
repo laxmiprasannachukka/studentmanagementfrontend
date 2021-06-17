@@ -1,9 +1,9 @@
 import axios from 'axios';
 
 export function Poststudentdata(data){
-    return axios.post(`http://localhost:5000/students`,data)
+    return axios.post(`https://studentdatabas.herokuapp.com/students`,data)
 }
 
 export function Getcollegedata(){
-    return axios.get(`http://localhost:5000/colleges`)
+    return axios.get(`https://studentdatabas.herokuapp.com/colleges`)
 }
