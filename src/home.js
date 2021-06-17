@@ -1,5 +1,4 @@
 import React,{useState,useEffect} from 'react';
-import {useHistory} from 'react-router';
 import {Poststudentdata} from './api.js';
 import {Getcollegedata} from './api.js';
 import { FacebookShareButton, FacebookIcon } from "react-share";
@@ -13,7 +12,7 @@ let [email,setemail]=useState("");
 let [mobile,setmobile]=useState();
 let [collegesapplied,setcollegesapplied]=useState([]);
 let [collegedata,setcollegedata]=useState([]);
-let history = useHistory();
+
 
 useEffect(async()=>{
     let colleges=await Getcollegedata();
